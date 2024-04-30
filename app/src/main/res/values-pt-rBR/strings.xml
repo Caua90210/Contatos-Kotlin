@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Contato</string>
+    <string name="title_new_contact">Novo Contato</string>
+    <string name="contact_name">Nome do contato</string>
+    <string name="email">Email do contato</string>
+    <string name="contact_phone">Telefone do contato</string>
+    <string name="contact_date">Data de nascimento</string>
+    <string name="contact_friend">Amigo</string>
+    <string name="save">Salvar</string>
+</resources>
