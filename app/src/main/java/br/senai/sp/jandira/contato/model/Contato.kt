@@ -14,6 +14,6 @@ data class Contato(
     val nome: String = "",
     val email: String = "",
     val telefone: String = "",
-    @ColumnInfo(name = "data_nascimento") val dataNascimento: LocalDate = LocalDate.now(),
+    @ColumnInfo(name = "data_nascimento") val dataNascimento: String= "",
     @ColumnInfo(name = "is_amigo") val isAmigo: Boolean = false
 )

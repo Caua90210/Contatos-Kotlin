@@ -11,17 +11,21 @@ import br.senai.sp.jandira.contato.model.Contato
 interface ContatoDAO {
 
     @Insert
-    fun salvar(contato: Contato)
+    fun salvar(contato: Contato): Long
 
     @Update
-    fun atualizar(contato: Contato)
+    fun atualizar(contato: Contato): Int
 
     @Delete
     fun excluir(contato: Contato)
 
-    @Query("SELECT * FROM tbl_contatos order by nome ASC")
-    fun listarTodosOsContatos(contato: Contato)
+    @Query("SELECT * FROM tbl_contatos ORDER BY nome ASC")
+    fun listarTodosOsContatos(): List<Contato>
 
     @Query("select * from tbl_contatos where nome = :nome order by nome ASC")
     fun BuscarContatoPeloNome(nome: String): List<Contato>
+    @Query("select * from tbl_contatos where id = :id")
+    fun BuscarContatoPeloID(id: Long): Contato
+
+    
 }
